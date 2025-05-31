@@ -1,0 +1,32 @@
+{
+  "name": "Camerahack",
+  "description": "A Node.js app using Express and EJS deployed on Heroku.",
+  "repository": "https://github.com/bloodlinebots/Camerahack",  // Replace with your actual repo link
+  "keywords": ["node", "express", "ejs", "heroku"],
+  "env": {
+    "PORT": {
+      "description": "Port for the web server to listen on",
+      "value": "3000"
+    },
+    "WEBHOOK_URL": {
+      "description": "Discord webhook URL",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo App successfully deployed!"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "stack": "heroku-22"
+}
