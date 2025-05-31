@@ -1,0 +1,18 @@
+{
+  "name": "camhackbot",
+  "version": "1.0.0",
+  "description": "Cam Hack Bot for Simulation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord-webhook-node": "^1.2.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
